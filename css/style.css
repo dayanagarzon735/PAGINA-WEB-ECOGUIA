@@ -1,0 +1,174 @@
+/* =========================
+      ESTILOS GENERALES
+========================= */
+
+body {
+    background-color: #e8f5e9;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2e7d32;
+}
+
+/* Colores principales */
+:root {
+    --eco-green: #2e7d32;
+    --eco-light: #e8f5e9;
+    --eco-dark: #1b5e20;
+    --eco-yellow: #fbc02d;
+    --eco-blue: #1565c0;
+}
+
+/* =========================
+      CABECERA / NAVBAR
+========================= */
+
+header,
+.navbar {
+    background-color: var(--eco-green) !important;
+    color: white !important;
+}
+
+.navbar a {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    opacity: .8;
+}
+
+
+/* =========================
+      TARJETAS Y SECCIONES
+========================= */
+
+.card {
+    border-radius: 15px !important;
+    background-color: #ffffff;
+    border: none;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--eco-dark);
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+        BOTONES
+========================= */
+
+.btn-eco-green {
+    background-color: var(--eco-green);
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn-eco-green:hover {
+    background-color: var(--eco-dark);
+}
+
+.btn-eco-yellow {
+    background-color: var(--eco-yellow);
+    color: #333;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.btn-eco-blue {
+    background-color: var(--eco-blue);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+
+/* =========================
+        FORMULARIOS
+========================= */
+
+input,
+select,
+textarea {
+    border-radius: 8px !important;
+    padding: 10px !important;
+    border: 1px solid #ccc;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--eco-green);
+    box-shadow: 0 0 5px rgba(46,125,50,0.4);
+}
+
+
+/* =========================
+        MAPA
+========================= */
+
+#map {
+    width: 100%;
+    height: 500px;
+    border-radius: 12px;
+    border: 3px solid var(--eco-green);
+}
+
+
+/* =========================
+        FOOTER
+========================= */
+
+footer {
+    background-color: var(--eco-green);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+
+/* =========================
+        RESPONSIVIDAD
+========================= */
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    #map {
+        height: 350px;
+    }
+}
+
+@media (max-width: 500px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
